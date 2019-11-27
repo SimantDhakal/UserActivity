@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         // Data listing through Arraylist
         List<Contacts> contactsList = new ArrayList<>();
         contactsList.add(new Contacts("Tom Cruise", "30", "Lalitpur", "male", R.drawable.male, R.drawable.delete));
+        contactsList.add(new Contacts("Simant Dhakal", "20", "Bhaktapur", "male", R.drawable.male, R.drawable.delete));
+        contactsList.add(new Contacts("Alisha Chan", "19", "Kathmandu", "female", R.drawable.female, R.drawable.delete));
 
         ContactsAdapter contactsAdapter = new ContactsAdapter(this, contactsList);
         recyclerView.setAdapter(contactsAdapter);
