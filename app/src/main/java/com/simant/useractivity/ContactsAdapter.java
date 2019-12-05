@@ -70,7 +70,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, DetailActivity.class);
                 intent.putExtra("name", contacts.getName());
-                intent.putExtra("address", contacts.getAddress());
+                intent.putExtra("phone", contacts.getAddress());
                 intent.putExtra("profile", contacts.getImage());
                 mContext.startActivity(intent);
             }
